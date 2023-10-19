@@ -7,25 +7,23 @@ module builtin
 // g_original_codepage - used to restore the original windows console code page when exiting
 __global g_original_codepage = u32(0)
 
-pub type C.BOOL = bool
+pub type C.BOOL = int
 
-pub struct C.HINSTANCE {}
+pub type C.HINSTANCE = voidptr
 
-pub struct C.HICON {}
+pub type C.HICON = voidptr
 
-pub struct C.HCURSOR {}
+pub type C.HCURSOR = voidptr
 
-pub struct C.HCURSOR {}
+pub type C.HBRUSH = voidptr
 
-pub struct C.HBRUSH {}
+pub type C.HWND = voidptr
 
-pub struct C.HWND {}
+pub type C.HGLOBAL = voidptr
 
-pub struct C.HGLOBAL {}
+pub type C.HANDLE = voidptr
 
-pub struct C.HANDLE {}
-
-pub struct C.LRESULT {}
+pub type C.LRESULT = voidptr
 
 // utf8 to stdout needs C.SetConsoleOutputCP(cp_utf8)
 fn C.GetConsoleOutputCP() u32
